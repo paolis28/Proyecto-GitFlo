@@ -1,0 +1,87 @@
+<!DOCTYPE html 5>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./img/favicon.jpg">
+    <title>Implementación de GitFlow</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 style="color: rgb(255, 255, 255);">Bienvenido a la página de GitFlow</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Git Flow</h1>
+            
+            <div class="definicion">
+                <h3>¿Qué es GitFlow?</h3>
+                <p>Gitflow es un modelo alternativo de creación de ramas en Git en el que se utilizan 
+                    ramas de función y varias ramas principales. Fue Vincent Driessen en nvie quien lo 
+                    publicó por primera vez y quien lo popularizó. En comparación con el desarrollo basado 
+                    en troncos, Gitflow tiene diversas ramas de más duración y mayores confirmaciones. 
+                    Según este modelo, los desarrolladores crean una rama de función y retrasan su fusión 
+                    con la rama principal del tronco hasta que la función está completa. Estas ramas de 
+                    función de larga duración requieren más colaboración para la fusión y tienen mayor 
+                    riesgo de desviarse de la rama troncal. También pueden introducir actualizaciones 
+                    conflictivas.
+                </p>
+                <img class="img" src="./img/gitflow.png"/>
+            </div> 
+
+            <div class="ventajas">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li>
+                        Desarrollo simultáneo: cada usuario tiene una copia legal del código y se les 
+                        permite laborar en diferentes ramas al mismo tiempo sin interferir en el proceso 
+                        de otro. Además, es posible realizar cambios y modificaciones in contar con 
+                        conexión.
+                    </li>
+
+                    <li>
+                        Versiones más rápidas: una vez que se finaliza el desarrollo, todas las versiones 
+                        se combinan, por lo que es más fácil administrar el código y enviar las 
+                        actualizaciones.
+                    </li>
+
+                    <li>                    
+                        Integración: Git se integra con otras herramientas. Además, se puede usar en la 
+                        procesos de CI, pruebas automáticas y seguimiento.
+                    </li>
+
+                    <li>
+                        Soporte técnico por la comunidad: Git es de código abierto, por lo que muchos 
+                        colaboradores brindan herramientas y recursos para aprovechar.
+                    </li>
+
+                    <li>  
+                        Funciona en cualquier equipo: emplear Git permite trabajar con mayor 
+                        productividad, que las colaboraciones sean más sencillas y la automatización de 
+                        ciertas tareas.
+                    </li>
+                </ul>
+                <img class="img2" src="./img/ventajas.png"/>
+            </div>
+
+            <div class="funcionamiento">
+                <h3>Se usan don ramas para registrar todo el historial del desarrollo.</h3>
+                <ul>
+                    <li>En la rama principal se guarda el historial original, por otro lado, la rama de 
+                        desarrollo se enfoca en las funciones que se integran.
+                    </li>
+                    <li>
+                        Las ramas de las funciones derivan de la rama principal, y una vez que se han 
+                        hecho correcciones, se fusionan con la misma.
+                    </li>
+                </ul>
+                <img class="img3" src="./img/funcionamiento.png"/>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

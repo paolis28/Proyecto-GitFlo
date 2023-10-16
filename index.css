@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(41, 41, 41);
+}
+div.container{
+    /* background-color: rgba(18, 18, 18, 0.345); */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-left: 10%;
+}
+
+div.definicion{
+    background-color: rgb(77, 77, 77);
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 2%;
+    transition: transform 0.3s;
+}
+
+div.ventajas{
+    background-color: rgb(90, 89, 89);
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 2%;
+    transition: transform 0.3s;
+}
+
+div.funcionamiento{
+    background-color: rgb(110, 110, 110);
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 2%;
+    transition: transform 0.3s;
+}
+
+.img{
+    width: 160%;
+}
+.img2{
+    width: 60%;
+}
+.img3{
+    width: 45%;
+}
+
+@media(hover:hover){
+    div.definicion:hover, div.ventajas:hover, div.funcionamiento:hover{
+        transform: scale(1.1);
+    }
+}
